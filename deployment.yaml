@@ -17,18 +17,20 @@ spec:
         - name: GOOGLE_APPLICATION_CREDENTIALS
           value: "/credentials/google-application-credentials.json"
         - name: PROJECT_ID
+          valueFrom:
             configMapKeyRef:
               name: google-cloud-dns-dynamic
               key: project_id
         - name: DNS_ZONE_NAME
+          valueFrom:
             configMapKeyRef:
               name: google-cloud-dns-dynamic
               key: dns_zone_name
         - name: DNS_NAME
+          valueFrom:
             configMapKeyRef:
               name: google-cloud-dns-dynamic
               key: dns_name
-          value: pi.kubernetes.rocks.
         volumeMounts:
         - name: google-application-credentials
           mountPath: "/credentials"

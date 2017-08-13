@@ -5,4 +5,4 @@ metadata:
 data:
   project_id: kubernetes-rocks
   dns_zone_name: kubernetes-rocks
-  dns_name: pi.kubernetes.rocks
+  dns_name: pi.kubernetes.rocks.

@@ -39,7 +39,8 @@ metadata:
 data:
   project_id: kubernetes-rocks
   dns_zone_name: kubernetes-rocks
-  dns_name: pi.kubernetes.rocks
+  dns_name: pi.kubernetes.rocks.
 EOF
+kubectl create secret generic google-application-credentials --from-file=google-application-credentials.json
 kubectl apply -f https://github.com/jonaseck2/rpi-google-cloud-dns-dynamic/blob/master/deployment.yaml
 ```
