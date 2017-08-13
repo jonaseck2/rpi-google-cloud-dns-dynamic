@@ -2,3 +2,4 @@
 Dockerfile
 *.md
 google-application-credentials.json
+*.yaml
